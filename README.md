@@ -12,7 +12,7 @@ The following video is an example of the possibilities of this instrument
 https://www.youtube.com/watch?v=RREjYEOBxy0&feature=youtu.be
 
 
-#Chuck Side
+# Chuck Side
 In Chuck, Im using multple oscillators with slight detunnuning between them to fatten the sound. Also A very neat class is used to map the sliders to certain scales (different types of scales are already hardcoded). Additionally, a low pass resonant filter is controlled by one of the joysticks and the vibrato level is controlled by the other.
 
 # The Controller
