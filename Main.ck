@@ -12,8 +12,8 @@
 [1.0, 1.0, 0.5] @=> float mixer[];
 
 [2, 1] @=> int mappingType[];
-[5, 5] @=> int octaves[];
-[-3, 0]@=> int transpositions[];
+[4, 4] @=> int octaves[];
+[-6, -3]@=> int transpositions[];
 [0,0] @=> int baseNotes[];
 
 // output router
@@ -21,6 +21,11 @@ Gain out;
 /* out => dac.chan(8);
 out => dac.chan(9); */
 out => dac;
+out => JCRev verb => LPF verbFilt => Gain verbGain => dac;
+
+verbFilt.freq(4000);
+verbFilt.Q(0.2);
+verbGain.gain(0.1);
 
 // Oscillators
 Moog osc1[2];
