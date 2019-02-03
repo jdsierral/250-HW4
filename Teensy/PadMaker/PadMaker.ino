@@ -1,3 +1,5 @@
+//#include <Bounce2.h>
+
 #include <ResponsiveAnalogRead.h>
 #include <Bounce.h>
 
@@ -77,4 +79,3 @@ void getDigitalData() {
     }
   }
 }
-
